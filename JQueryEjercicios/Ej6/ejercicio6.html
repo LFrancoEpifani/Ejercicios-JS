@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .hp{
+            margin-top: 2rem;
+        }
+
+        .food-vida {
+            width: 300px; 
+            height: 20px; 
+            background-color: black; 
+            position: absolute;
+            top: 30px;
+            left: 0; 
+        }
+
+        .grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+       
+        .food-btn{
+            cursor: pointer;
+            margin: 0.7rem;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .food-vida{
+            margin: 1.5rem 0.6rem;
+            border-radius: 1rem;
+        }
+
+        #food{
+            background-color: rgb(115, 234, 115);
+        }
+
+        #porcentaje-food{
+            width: 0;
+            height: 20px; 
+            background-color: green;
+           border-radius: 1rem;
+        }
+
+
+        /* FUN */
+
+        
+        .fun-vida {
+            width: 300px; 
+            height: 20px; 
+            background-color: black; 
+            position: absolute;
+            top: 30px;
+            right: 0; 
+        }
+
+        .fun-btn{
+            cursor: pointer;
+            margin: 0.7rem;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .fun-vida{
+            margin: 1.5rem 0.6rem;
+            border-radius: 1rem;
+        }
+
+        #fun{
+            text-align: end;
+            background-color: rgb(248, 243, 103);
+        }
+
+        
+        #porcentaje-fun{
+            width: 0;
+            height: 20px;
+            background-color: green;
+           border-radius: 1rem;
+        }
+        
+
+        /* FIGHT */
+
+        
+        #porcentaje-fight{
+            width: 0;
+            height: 20px; 
+            background-color: green;
+           border-radius: 1rem;
+        }
+
+        
+        .fight-vida {
+            width: 300px; 
+            height: 20px; 
+            background-color: black; 
+            position: absolute;
+            top: 380px;
+            left: 0; 
+        }
+
+
+        .fight-btn{
+            cursor: pointer;
+            margin: 0.7rem;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .fight-vida{
+            margin: 1.5rem 0.6rem;
+            border-radius: 1rem;
+        }
+
+        #fight{
+            margin-top: 0rem;
+            text-align: start;
+            background-color: rgb(248, 132, 103);
+        }
+
+         /* SLEEP */
+         
+        #porcentaje-sleep{
+            width: 0;
+            height: 20px;
+            background-color: green;
+           border-radius: 1rem;
+        }
+
+        
+         .sleep-vida {
+            width: 300px; 
+            height: 20px; 
+            background-color: black; 
+            position: absolute;
+            top: 380px;
+            right: 0; 
+        }
+
+
+        .sleep-btn{
+            cursor: pointer;
+            margin: 0.7rem;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .sleep-vida{
+            margin: 1.5rem 0.6rem;
+            border-radius: 1rem;
+        }
+
+        #sleep{
+            text-align: end;
+            background-color: rgb(103, 149, 248);
+        }
+
+
+        #porcentaje-fluffy{
+            width: 0;
+            height: 20px; 
+            background-color: green;
+           border-radius: 1rem;
+        }
+
+        .fluffy{
+            position: absolute;
+            top: 40%;
+            right: 46%;
+            text-align: center;
+        }
+
+        .fluffy h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            margin-bottom: 0.3rem;
+        }
+
+        .fluffy p i{
+            font-size: 50px;
+        }
+
+        
+        .fluffy-vida {
+            position: absolute;
+            top: 70%;
+            right: 32%;
+            text-align: center;
+            width: 300px; 
+            height: 20px; 
+            background-color: black; 
+            border-radius: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="grid">
+            <div id="food">
+                <button class="food-btn"><i class="fa-solid fa-pizza-slice"></i></button>
+                <button class="food-btn"><i class="fa-solid fa-carrot"></i></button>
+                <button class="food-btn"><i class="fa-solid fa-shrimp"></i></button>
+                <div class="food-vida">
+                    <div id="porcentaje-food"></div>
+                    <div class="hp-food">
+                        <p>HP: <span></span></p>
+                    </div>
+                </div>
+            </div>            
+            <div id="fun">
+                <button class="fun-btn"><i class="fa-solid fa-bicycle"></i></button>
+                <button class="fun-btn"><i class="fa-solid fa-person-swimming"></i></button>
+                <button class="fun-btn"><i class="fa-solid fa-volleyball"></i></button>
+                <div class="fun-vida">
+                    <div id="porcentaje-fun">
+                        
+                    </div>
+                    <div class="hp-fun">
+                        <p>HP: <span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="fight">
+                <button class="fight-btn"><i class="fa-solid fa-person-running"></i></button>
+                <button class="fight-btn"><i class="fa-solid fa-hand-fist"></i></button>
+                <div class="fight-vida">
+                    <div id="porcentaje-fight">
+                        
+                    </div>
+                    <div class="hp-fight">
+                        <p>HP: <span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="sleep">
+                <button class="sleep-btn"><i class="fa-solid fa-moon"></i></button>
+                <button class="sleep-btn"><i class="fa-solid fa-bed"></i></button>
+                <div class="sleep-vida">
+                    <div id="porcentaje-sleep">
+                        
+                    </div>
+                    <div class="hp-sleep">
+                        <p>HP: <span></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fluffy">
+            <h2>Fluffy</h2>
+            <p>
+                <i class="fa-solid fa-cat"></i>
+            </p>
+        </div>
+        <div class="fluffy-vida">
+            <div id="porcentaje-fluffy">
+                        
+            </div>
+            <div class="hp">
+                <p>HP: <span>100%</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="ejercicio6.js"></script>
+</body>
+</html>

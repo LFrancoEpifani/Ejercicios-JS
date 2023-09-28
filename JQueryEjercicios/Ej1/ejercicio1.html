@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="add">
+            <h2>Add Item</h2>
+            <button id="pusher-btn">Push</button>
+            <button class="unshift-btn">Unshift</button>
+            <button class="at-btn">Insert at</button>
+            <input id="numero" type="number" min="1">
+        </div>
+        <div class="remove">
+            <h2>Remove Item</h2>
+            <button class="pop-btn">Pop</button>
+            <button class="shift-btn">Shift</button>
+            <button class="r-at-btn">Remove at</button>
+            <input id="remove-index" type="number" min="1">
+        </div>
+    </div>
+    
+    <script>
+        const array = [];
+
+        document.getElementById('pusher-btn').addEventListener('click', () => {
+            const numero = parseInt(document.getElementById('numero').value);
+            array.push(numero);
+            console.log('Array:', array);
+        });
+
+        document.querySelector('.unshift-btn').addEventListener('click', () => {
+            const numero = parseInt(document.getElementById('numero').value);
+            array.unshift(numero);
+            console.log('Array:', array);
+        });
+
+        document.querySelector('.at-btn').addEventListener('click', () => {
+            const index = parseInt(document.getElementById('numero').value);
+            const numero = parseInt(prompt('Ingrese el número a insertar:'));
+            if (!isNaN(index) && index >= 1 && index <= array.length) {
+                array.splice(index - 1, 0, numero);
+                console.log('Array:', array);
+            } else {
+                alert('Índice no válido');
+            }
+        });
+
+        document.querySelector('.pop-btn').addEventListener('click', () => {
+            array.pop();
+            console.log('Array:', array);
+        });
+
+        document.querySelector('.shift-btn').addEventListener('click', () => {
+            array.shift();
+            console.log('Array:', array);
+        });
+
+        document.querySelector('.r-at-btn').addEventListener('click', () => {
+            const index = parseInt(document.getElementById('remove-index').value);
+            if (!isNaN(index) && index >= 1 && index <= array.length) {
+                array.splice(index - 1, 1);
+                console.log('Array:', array);
+            } else {
+                alert('Índice no válido');
+            }
+        });
+    </script>
+</body>
+</html>
