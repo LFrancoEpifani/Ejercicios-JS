@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ejercicio_6.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="grid">
+            <div class="food">
+                <div class="food-btn">
+                    <button id="food-btn-1"><i class="fa-solid fa-utensils"></i></button>
+                    <button id="food-btn-2"><i class="fa-solid fa-wine-glass"></i></button>
+                    <button id="food-btn-3"><i class="fa-solid fa-hotdog"></i></button>
+                </div>
+                <div class="food-hp">
+                    <div id="food-hp-up"></div>
+                </div>
+                <p id="porcentaje-food">0%</p>
+            </div> <!-- Cierre div food -->
+            <div class="fun">
+                <div class="fun-btn">
+                    <button id="fun-btn-1"><i class="fa-solid fa-volleyball"></i></button>
+                    <button id="fun-btn-2"><i class="fa-solid fa-chess-knight"></i></button>
+                    <button id="fun-btn-3"><i class="fa-brands fa-critical-role"></i></button>
+                </div>
+                <div class="fun-hp">
+                    <div id="fun-hp-up">
+                        
+                    </div>
+                </div>
+                <p id="pocentaje-fun">0%</p>
+            </div> <!-- Cierre div fun -->
+            <div class="sleep">
+                <div class="sleep-btn">
+                    <button id="sleep-btn-1" onclick="contador()"><i class="fa-solid fa-moon"></i></button>
+                    <button id="sleep-btn-1" onclick="contador()"><i class="fa-solid fa-bed"></i></button>
+                </div>
+                <div class="sleep-hp">
+                    <div id="sleep-hp-up"></div> 
+                </div>
+                <p id="porcentaje-sleep">0%</p>
+            </div>            
+            <div class="fight">
+                <div class="fight-btn">
+                    <button id="fight-btn-1"><i class="fa-solid fa-hand-fist"></i></button>
+                    <button id="fight-btn-2"><i class="fa-solid fa-dumbbell"></i></button>
+                </div>
+                <div class="fight-hp">
+                    <div id="fight-hp-up">
+                    </div>
+                </div>
+                <p id="porcentaje-fight">0%</p>
+            </div> <!-- Cierre div fight -->
+        </div>
+        <div class="dino">
+            <h2>Dino</h2>
+            <p class="otter"><i class="fa-solid fa-otter"></i></p>
+            <div class="dino-hp">
+                <div id="fight-hp-up">
+                </div>
+                <p id="procentaje-dino">0%</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="ejercicio_6.js"></script>
+</body>
+</html>
