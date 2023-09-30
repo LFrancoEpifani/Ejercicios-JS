@@ -1,0 +1,95 @@
+.contenedor{
+    background-image: url(./drums.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    background: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 0.1px solid red;
+}
+
+.botones{
+    position: relative;
+}
+
+#platillo-1{
+    
+    right: 50px;
+    top: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+#platillo-2{
+    left: 50px;
+    top: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#kick-1{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 390px;
+    right: 200px;
+    cursor: pointer;
+}
+
+#kick-2{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 390px;
+    left: 180px;
+    cursor: pointer;
+}
+
+#tom-1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 170px;
+    right: 250px;
+    cursor: pointer;
+}
+
+#tom-2{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 170px;
+    left: 220px;
+    cursor: pointer;
+}
+
+#tom-3{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#hat{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    cursor: pointer;
+}

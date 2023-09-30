@@ -8,30 +8,38 @@
 </head>
 <body>
     
-    <div class="calculator">
+    <div class="calculator" id="calc">
+        <div class="changes">
+            <h1>calc</h1>
+            <div class="btn-color">
+            <button class="color" id="uno">1</button>
+            <button class="color"  id="dos">2</button>
+            <button class="color"  id="tres">3</button>
+            </div>
+        </div>
         <form>
-            <input type="number" class="screen">
+            <input type="text" class="screen">
         </form>
         <div class="buttons">
-            <button type="button" class="btn btn-yellow" data-num="*">*</button>
-            <button type="button" class="btn btn-yellow" data-num="/">/</button>
-            <button type="button" class="btn btn-yellow" data-num="-">-</button>
-            <button type="button" class="btn btn-yellow" data-num="+">+</button>
+            <button type="button" class="btn btn-func" data-num="*">*</button>
+            <button type="button" class="btn btn-func" data-num="/">/</button>
+            <button type="button" class="btn btn-func" data-num="-">-</button>
+            <button type="button" class="btn btn-func" data-num="+">+</button>
 
-            <button type="button" class="btn btn-grey" data-num="9">9</button>
-            <button type="button" class="btn btn-grey" data-num="8">8</button>
-            <button type="button" class="btn btn-grey" data-num="7">7</button>
-            <button type="button" class="btn btn-grey" data-num="6">6</button>
-            <button type="button" class="btn btn-grey" data-num="5">5</button>
-            <button type="button" class="btn btn-grey" data-num="4">4</button>
-            <button type="button" class="btn btn-grey" data-num="3">3</button>
-            <button type="button" class="btn btn-grey" data-num="2">2</button>
-            <button type="button" class="btn btn-grey" data-num="1">1</button>
-            <button type="button" class="btn btn-grey" data-num="0">0</button>
-            <button type="button" class="btn btn-grey" data-num=".">.</button>
+            <button type="button" class="btn btn-number" data-num="9">9</button>
+            <button type="button" class="btn btn-number" data-num="8">8</button>
+            <button type="button" class="btn btn-number" data-num="7">7</button>
+            <button type="button" class="btn btn-number" data-num="6">6</button>
+            <button type="button" class="btn btn-number" data-num="5">5</button>
+            <button type="button" class="btn btn-number" data-num="4">4</button>
+            <button type="button" class="btn btn-number" data-num="3">3</button>
+            <button type="button" class="btn btn-number" data-num="2">2</button>
+            <button type="button" class="btn btn-number" data-num="1">1</button>
+            <button type="button" class="btn btn-number" data-num="0">0</button>
+            <button type="button" class="btn btn-number" data-num=".">.</button>
 
-            <button type="button" class="btn btn-grey" >=</button>
-            <button type="button" class="btn btn-grey" >C</button>
+            <button type="button" class="btn-equal" >=</button>
+            <button type="button" class="btn-delete" >C</button>
         </div>
     </div>
 
